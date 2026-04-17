@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #4e73df;
+    --dark-bg: #212529;
+    --light-bg: #f8f9fc;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+}
+
+/* Sidebar Structure */
+.sidebar {
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--dark-bg) 10%, #1a1d20 100%);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+/* Borders for Dashboard Cards */
+.border-left-primary { border-left: 4px solid var(--primary-color) !important; }
+.border-left-success { border-left: 4px solid #1cc88a !important; }
+.border-left-info { border-left: 4px solid #36b9cc !important; }
+.border-left-warning { border-left: 4px solid #f6c23e !important; }
+
+/* Timetable Colors */
+.bg-theorique { background-color: #cfe2ff; border-left: 4px solid #0d6efd; }
+.bg-pratique { background-color: #d1e7dd; border-left: 4px solid #198754; }
+
+/* Main Layout */
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-area {
+    flex: 1;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* Minimal Footer */
+.footer-minimal {
+    padding: 15px 0;
+    background: #ffffff;
+    border-top: 1px solid #e3e6f0;
+    font-size: 0.85rem;
+    color: #858796;
+}
